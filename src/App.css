@@ -2,37 +2,59 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category-container, .category-detail-container {
+  padding: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.category-list, .meal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.category-card, .meal-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-card:hover, .meal-card:hover {
+  transform: scale(1.05);
+}
+
+.category-image, .meal-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-name, .meal-name {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.category-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: rgb(123, 139, 139);
+}
+
+.navbar .nav-link {
+  color: #ffffff; /* Warna putih */
+}
+
+.navbar .nav-link:hover {
+  color: #535353; /* Warna merah tomat saat hover */
+}
+
+.about {
+  padding-top: 75px;
+  margin-top: auto;
 }
